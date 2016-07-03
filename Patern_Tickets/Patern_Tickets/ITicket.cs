@@ -9,6 +9,8 @@ namespace Patern_Tickets
 {
     interface ITicket
     {
-        void CreateTicket();
+        void GetTicket();
+
+        string Trip();
     }
 }

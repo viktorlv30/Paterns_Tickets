@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets
 {
-    public class Avia_t : ITicket
+    public class Avia_t : Ticket, ITicket
     {
  
-        public void CreateTicket()
+        public void GetTicket()
         {
-            Console.WriteLine("Crate avia ticket"); 
+            Console.WriteLine("Get avia ticket"); 
+        }
+
+        public string Trip()
+        {
+            string str = "Trip from " + Departure + " to " + Arrival + " on the plane.";
+            return str;
         }
     }
 }

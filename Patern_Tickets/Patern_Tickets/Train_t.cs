@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets
 {
-    class Train_t : ITicket
+    class Train_t : Ticket, ITicket
     {
-        public void CreateTicket()
+        public void GetTicket()
         {
-            Console.WriteLine("Create train ticket!");
+            Console.WriteLine("Get train ticket!");
+        }
+
+        public string Trip()
+        {
+            string str = "Trip from " + Departure + " to " + Arrival + " by train.";
+            return str;
         }
     }
 }
