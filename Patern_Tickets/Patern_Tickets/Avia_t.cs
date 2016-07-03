@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets
 {
-    class Program
+    public class Avia_t : ITicket
     {
-        static void Main(string[] args)
+ 
+        public void CreateTicket()
         {
-
+            Console.WriteLine("Crate avia ticket"); 
         }
     }
 }

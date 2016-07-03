@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets
 {
-    class Program
+    class Bus_t : ITicket
     {
-        static void Main(string[] args)
+        public void CreateTicket()
         {
-
+            Console.WriteLine("Create bus ticket!");
         }
     }
 }

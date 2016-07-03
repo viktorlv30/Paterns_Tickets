@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets
 {
-    class Program
+    class Ship_t : ITicket
     {
-        static void Main(string[] args)
+        public void CreateTicket()
         {
-
+            Console.WriteLine("Create ship ticket!");
         }
     }
 }

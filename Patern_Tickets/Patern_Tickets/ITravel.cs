@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets
 {
-    class Program
+    interface ITravel
     {
-        static void Main(string[] args)
-        {
-
-        }
     }
 }
