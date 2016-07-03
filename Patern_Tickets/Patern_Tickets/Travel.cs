@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets
 {
-    interface ITravel
+    public class Travel
     {
+        private ITicket _ticket;
+
     }
 }

@@ -45,11 +45,15 @@
   <ItemGroup>
     <Compile Include="AviaT.cs" />
     <Compile Include="BusT.cs" />
+    <Compile Include="Factories\AirTickFactory.cs" />
+    <Compile Include="Factories\BusTickFactory.cs" />
+    <Compile Include="Factories\ShipTickFactory.cs" />
+    <Compile Include="Factories\TrainTickFactory.cs" />
     <Compile Include="ITicket.cs" />
-    <Compile Include="ITravel.cs" />
+    <Compile Include="ITicketCreator.cs" />
+    <Compile Include="Travel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SalonAirClass.cs" />
     <Compile Include="ShipT.cs" />
     <Compile Include="Ticket.cs" />
     <Compile Include="TrainT.cs" />

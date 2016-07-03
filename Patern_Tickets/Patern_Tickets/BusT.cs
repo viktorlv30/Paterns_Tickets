@@ -11,6 +11,9 @@ namespace Patern_Tickets
 
         private int _placeNumber;
 
+        public BusT()
+        { }
+
         public BusT(string depart, string arrival, DateTime date, int plNum)
             : base(depart, arrival, date)
         {
@@ -24,7 +27,7 @@ namespace Patern_Tickets
             Console.WriteLine("Get bus ticket!");
         }
 
-        public string Trip()
+        public string ShowTrip()
         {
             string str = "Trip from " + Departure + " to " + Arrival + " on the bus.";
             return str;

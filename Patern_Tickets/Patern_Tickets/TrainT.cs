@@ -11,6 +11,9 @@ namespace Patern_Tickets
 
         private int _wagonNumber;
 
+        public TrainT()
+        { }
+
         public TrainT(string depart, string arrival, DateTime date, int wagNum)
             : base(depart, arrival, date)
         {
@@ -24,7 +27,7 @@ namespace Patern_Tickets
             Console.WriteLine("Get train ticket!");
         }
 
-        public string Trip()
+        public string ShowTrip()
         {
             string str = "Trip from " + Departure + " to " + Arrival + " by train.";
             return str;

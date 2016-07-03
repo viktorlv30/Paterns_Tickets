@@ -11,6 +11,9 @@ namespace Patern_Tickets
 
         private int _cabinNumber;
 
+        public ShipT()
+        { }
+
         public ShipT(string depart, string arrival, DateTime date, int cabNum)
             : base(depart, arrival, date)
         {
@@ -24,7 +27,7 @@ namespace Patern_Tickets
             Console.WriteLine("Get ship ticket!");
         }
 
-        public string Trip()
+        public string ShowTrip()
         {
             string str = "Trip from " + Departure + " to " + Arrival + " on the ship.";
             return str;

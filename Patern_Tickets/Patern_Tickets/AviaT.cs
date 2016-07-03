@@ -11,6 +11,9 @@ namespace Patern_Tickets
 
         private int _alt;
 
+        public AviaT()
+        { }
+
         public AviaT(string depart, string arrival, DateTime date, int alt)
             : base(depart, arrival, date)
         {
@@ -24,7 +27,7 @@ namespace Patern_Tickets
             Console.WriteLine("Get avia ticket"); 
         }
 
-        public string Trip()
+        public string ShowTrip()
         {
             string str = "Trip from " + Departure + " to " + Arrival + " on the plane.";
             return str;
