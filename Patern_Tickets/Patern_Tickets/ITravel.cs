@@ -12,7 +12,7 @@ namespace Patern_Tickets
 
         void RemoveTicket(int index);
 
-        string ShowTravel(List<Ticket> tiketsList);
+        string ShowTravel();
 
     }
 }

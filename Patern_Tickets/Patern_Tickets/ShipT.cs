@@ -20,7 +20,11 @@ namespace Patern_Tickets
             _cabinNumber = cabNum;
         }
 
-        public int CabinNumber { get; set; }
+        public int CabinNumber
+        {
+            get { return _cabinNumber; }
+            set { _cabinNumber = value; }
+        }
 
         public void GetTicket()
         {
@@ -29,7 +33,8 @@ namespace Patern_Tickets
 
         public override string ShowTrip()
         {
-            string str = "Trip from " + Departure + " to " + Arrival + " on the plane at " + DateAndTimeStart.ToLongDateString();
+            string str = "Trip from " + Departure + " to " + Arrival + " on the CRUISER at "
+                + DateAndTimeStart.ToLongDateString() + Environment.NewLine;
             return str;
         }
 

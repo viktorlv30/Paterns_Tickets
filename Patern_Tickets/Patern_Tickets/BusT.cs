@@ -8,19 +8,16 @@ namespace Patern_Tickets
 {
     class BusT : Ticket, ITicket
     {
-
-        private int _placeNumber;
-
         public BusT()
         { }
 
         public BusT(string depart, string arrival, DateTime date, int plNum)
             : base(depart, arrival, date)
         {
-            _placeNumber = plNum;
+            PlaceNumber = plNum;
         }
 
-        public int PlaceNumber { get; set; }
+        protected int PlaceNumber { get; set; }
 
         public void GetTicket()
         {
@@ -29,7 +26,8 @@ namespace Patern_Tickets
 
         public override string ShowTrip()
         {
-            string str = "Trip from " + Departure + " to " + Arrival + " on the plane at " + DateAndTimeStart.ToLongDateString();
+            string str = "Trip from " + this.Departure + " to " + this.Arrival + 
+                " by the BUS at " + this.DateAndTimeStart.ToLongDateString() + Environment.NewLine;
             return str;
         }
     }

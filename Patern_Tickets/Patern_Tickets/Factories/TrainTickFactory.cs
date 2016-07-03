@@ -12,5 +12,10 @@ namespace Patern_Tickets.Factories
         {
             return new TrainT();
         }
+
+        public Ticket CreateTicket(string dep, string arr, DateTime dateTime, int wagNum)
+        {
+            return new TrainT(dep, arr, dateTime, wagNum);
+        }
     }
 }

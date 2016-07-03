@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets.Factories
 {
-    internal class BusTickFactory : ITicketCreator
+    public class BusTickFactory : ITicketCreator
     {
         public Ticket CreateTicket()
         {
             return new BusT();
+        }
+
+        public Ticket CreateTicket(string dep, string arr, DateTime dateTime, int plNum)
+        {
+            return new BusT(dep, arr, dateTime, plNum);
         }
     }
 }

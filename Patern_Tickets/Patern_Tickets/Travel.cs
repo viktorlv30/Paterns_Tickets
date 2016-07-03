@@ -10,10 +10,25 @@ namespace Patern_Tickets
     {
 
         private List<Ticket> _tickets;
+
+        public Travel()
+        {
+            _tickets = new List<Ticket>();
+        }
          
         public void AddTicket(Ticket ticket)
         {
-            _tickets.Add(ticket);
+            try
+            {
+                _tickets.Add(ticket);
+                //Console.WriteLine("This ticket is included good!");
+            }
+            catch 
+            {
+                Console.WriteLine("ERROR.\nCann't include ticket!!!");
+            }
+            
+            
         }
 
         public void RemoveTicket(int index)
@@ -21,9 +36,17 @@ namespace Patern_Tickets
             _tickets.RemoveAt(index);
         }
 
-        public string ShowTravel(List<Ticket> tiketsList)
+        public string ShowTravel()
         {
-            return tiketsList.Aggregate("", (current, tick) => current + tick.ShowTrip());
+            try
+            {
+                return _tickets.Aggregate("", (current, tick) => current + tick.ShowTrip());
+            }
+            catch 
+            {
+                return "No tickets for show!!!";
+            }
+            
         }
     }
 }

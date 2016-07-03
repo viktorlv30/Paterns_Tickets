@@ -20,7 +20,11 @@ namespace Patern_Tickets
             _alt = alt;
         }
 
-        public int Alt { get; set; }
+        protected int Alt
+        {
+            get { return _alt; }
+            set { _alt = value; }
+        }
 
         public void GetTicket()
         {
@@ -29,7 +33,8 @@ namespace Patern_Tickets
 
         public override string ShowTrip()
         {
-            string str = "Trip from " + Departure + " to " + Arrival + " on the plane at " + DateAndTimeStart.ToLongDateString();
+            string str = "Trip from " + Departure + " to " + Arrival + 
+                " on the PLANE at " + DateAndTimeStart.ToLongDateString() + Environment.NewLine;
             return str;
         }
 

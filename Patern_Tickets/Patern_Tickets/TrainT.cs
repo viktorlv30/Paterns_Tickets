@@ -20,7 +20,11 @@ namespace Patern_Tickets
             _wagonNumber = wagNum;
         }
 
-        public int Wagon { get; set; }
+        public int Wagon
+        {
+            get { return _wagonNumber; }
+            set { _wagonNumber = value; }
+        }
 
         public void GetTicket()
         {
@@ -29,7 +33,8 @@ namespace Patern_Tickets
 
         public override string ShowTrip()
         {
-            string str = "Trip from " + Departure + " to " + Arrival + " on the plane at " + DateAndTimeStart.ToLongDateString();
+            string str = "Trip from " + Departure + " to " + Arrival + " on the TRAIN at " 
+                + DateAndTimeStart.ToLongDateString() + Environment.NewLine;
             return str;
         }
     }

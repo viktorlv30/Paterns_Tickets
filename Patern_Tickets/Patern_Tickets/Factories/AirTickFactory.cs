@@ -12,5 +12,11 @@ namespace Patern_Tickets.Factories
         {
             return new AviaT();
         }
+
+        public Ticket CreateTicket(string dep, string arr, DateTime dateTime, int alt)
+        {
+            return new AviaT(dep, arr, dateTime, alt);
+        }
+
     }
 }

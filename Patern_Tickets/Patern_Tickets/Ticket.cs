@@ -8,10 +8,6 @@ namespace Patern_Tickets
 {
     public abstract class Ticket
     {
-        private string _departure;
-        private string _arrival;
-        private DateTime _date;
-
         protected Ticket()
         {
             
@@ -19,9 +15,9 @@ namespace Patern_Tickets
 
         protected Ticket(string depart, string arrival, DateTime date)
         {
-            _departure = depart;
-            _arrival = arrival;
-            _date = date;
+            Departure = depart;
+            Arrival = arrival;
+            DateAndTimeStart = date;
         }
 
         protected string Departure { get; set; }
