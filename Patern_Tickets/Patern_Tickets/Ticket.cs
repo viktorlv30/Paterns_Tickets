@@ -24,9 +24,9 @@ namespace Patern_Tickets
             _date = date;
         }
 
-        public string Departure { get; set; }
+        protected string Departure { get; set; }
 
-        public string Arrival { get; set; }
+        protected string Arrival { get; set; }
 
         public DateTime DateTime { get; set; }
     }

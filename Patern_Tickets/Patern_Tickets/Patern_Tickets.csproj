@@ -43,15 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Avia_t.cs" />
-    <Compile Include="Bus_t.cs" />
+    <Compile Include="AviaT.cs" />
+    <Compile Include="BusT.cs" />
     <Compile Include="ITicket.cs" />
     <Compile Include="ITravel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Ship_t.cs" />
+    <Compile Include="SalonAirClass.cs" />
+    <Compile Include="ShipT.cs" />
     <Compile Include="Ticket.cs" />
-    <Compile Include="Train_t.cs" />
+    <Compile Include="TrainT.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

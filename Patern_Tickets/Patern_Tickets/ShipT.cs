@@ -6,8 +6,19 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets
 {
-    class Ship_t : Ticket, ITicket
+    public class ShipT : Ticket, ITicket
     {
+
+        private int _cabinNumber;
+
+        public ShipT(string depart, string arrival, DateTime date, int cabNum)
+            : base(depart, arrival, date)
+        {
+            _cabinNumber = cabNum;
+        }
+
+        public int CabinNumber { get; set; }
+
         public void GetTicket()
         {
             Console.WriteLine("Get ship ticket!");
@@ -18,5 +29,8 @@ namespace Patern_Tickets
             string str = "Trip from " + Departure + " to " + Arrival + " on the ship.";
             return str;
         }
+
+        
+
     }
 }
