@@ -27,10 +27,12 @@ namespace Patern_Tickets
             Console.WriteLine("Get avia ticket"); 
         }
 
-        public string ShowTrip()
+        public override string ShowTrip()
         {
-            string str = "Trip from " + Departure + " to " + Arrival + " on the plane.";
+            string str = "Trip from " + Departure + " to " + Arrival + " on the plane at " + DateAndTimeStart.ToLongDateString();
             return str;
         }
+
+ 
     }
 }

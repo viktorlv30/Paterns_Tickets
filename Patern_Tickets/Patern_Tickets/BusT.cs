@@ -27,9 +27,9 @@ namespace Patern_Tickets
             Console.WriteLine("Get bus ticket!");
         }
 
-        public string ShowTrip()
+        public override string ShowTrip()
         {
-            string str = "Trip from " + Departure + " to " + Arrival + " on the bus.";
+            string str = "Trip from " + Departure + " to " + Arrival + " on the plane at " + DateAndTimeStart.ToLongDateString();
             return str;
         }
     }

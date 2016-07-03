@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets.Factories
 {
-    internal class TrainTickFactory : ITicketCreator
+    public class TrainTickFactory : ITicketCreator
     {
         public Ticket CreateTicket()
         {

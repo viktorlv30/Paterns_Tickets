@@ -51,6 +51,7 @@
     <Compile Include="Factories\TrainTickFactory.cs" />
     <Compile Include="ITicket.cs" />
     <Compile Include="ITicketCreator.cs" />
+    <Compile Include="ITravel.cs" />
     <Compile Include="Travel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

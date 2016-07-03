@@ -6,9 +6,24 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets
 {
-    public class Travel
+    public class Travel : ITravel
     {
-        private ITicket _ticket;
 
+        private List<Ticket> _tickets;
+         
+        public void AddTicket(Ticket ticket)
+        {
+            _tickets.Add(ticket);
+        }
+
+        public void RemoveTicket(int index)
+        {
+            _tickets.RemoveAt(index);
+        }
+
+        public string ShowTravel(List<Ticket> tiketsList)
+        {
+            return tiketsList.Aggregate("", (current, tick) => current + tick.ShowTrip());
+        }
     }
 }

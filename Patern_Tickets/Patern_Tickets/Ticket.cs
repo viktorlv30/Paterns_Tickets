@@ -28,6 +28,9 @@ namespace Patern_Tickets
 
         protected string Arrival { get; set; }
 
-        public DateTime DateTime { get; set; }
+        protected DateTime DateAndTimeStart { get; set; }
+
+        public abstract string ShowTrip();
+
     }
 }
