@@ -7,7 +7,7 @@ using Patern_Tickets.Factories;
 
 namespace Patern_Tickets
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {

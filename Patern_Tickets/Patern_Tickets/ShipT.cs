@@ -8,8 +8,7 @@ namespace Patern_Tickets
 {
     public class ShipT : Ticket, ITicket
     {
-
-        private int _cabinNumber;
+        protected int CabinNumber { get; set; }
 
         public ShipT()
         { }
@@ -17,13 +16,7 @@ namespace Patern_Tickets
         public ShipT(string depart, string arrival, DateTime date, int cabNum)
             : base(depart, arrival, date)
         {
-            _cabinNumber = cabNum;
-        }
-
-        public int CabinNumber
-        {
-            get { return _cabinNumber; }
-            set { _cabinNumber = value; }
+            CabinNumber = cabNum;
         }
 
         public void GetTicket()

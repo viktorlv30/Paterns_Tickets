@@ -9,7 +9,7 @@ namespace Patern_Tickets
     public class AviaT : Ticket, ITicket
     {
 
-        private int _alt;
+        protected int Alt { get; set; }
 
         public AviaT()
         { }
@@ -17,13 +17,7 @@ namespace Patern_Tickets
         public AviaT(string depart, string arrival, DateTime date, int alt)
             : base(depart, arrival, date)
         {
-            _alt = alt;
-        }
-
-        protected int Alt
-        {
-            get { return _alt; }
-            set { _alt = value; }
+            Alt = alt;
         }
 
         public void GetTicket()

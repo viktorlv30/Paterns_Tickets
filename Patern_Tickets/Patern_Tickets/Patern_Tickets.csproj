@@ -45,10 +45,14 @@
   <ItemGroup>
     <Compile Include="AviaT.cs" />
     <Compile Include="BusT.cs" />
-    <Compile Include="Factories\AirTickFactory.cs" />
-    <Compile Include="Factories\BusTickFactory.cs" />
-    <Compile Include="Factories\ShipTickFactory.cs" />
-    <Compile Include="Factories\TrainTickFactory.cs" />
+    <Compile Include="KassaFactory\UrozhaiKassaFactory.cs" />
+    <Compile Include="TicketFactory\AirTickFactory.cs" />
+    <Compile Include="TicketFactory\BusTickFactory.cs" />
+    <Compile Include="KassaFactory\PBKassaFactory.cs" />
+    <Compile Include="TicketFactory\ShipTickFactory.cs" />
+    <Compile Include="TicketFactory\TrainTickFactory.cs" />
+    <Compile Include="KassaFactory\UkrzaliznucyaKassaFactory.cs" />
+    <Compile Include="IKassa.cs" />
     <Compile Include="ITicket.cs" />
     <Compile Include="ITicketCreator.cs" />
     <Compile Include="ITravel.cs" />

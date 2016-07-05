@@ -8,6 +8,9 @@ namespace Patern_Tickets
 {
     class BusT : Ticket, ITicket
     {
+
+        protected int PlaceNumber { get; set; }
+
         public BusT()
         { }
 
@@ -16,8 +19,6 @@ namespace Patern_Tickets
         {
             PlaceNumber = plNum;
         }
-
-        protected int PlaceNumber { get; set; }
 
         public void GetTicket()
         {
