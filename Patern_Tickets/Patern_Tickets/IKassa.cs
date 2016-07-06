@@ -4,11 +4,13 @@ namespace Patern_Tickets
 {
     public interface IKassa
     {
-        Ticket LuxuryTicket(string d, string a, DateTime dat, int i);
+        //return expensive ticket to airplane
+        Ticket LuxuryTicket(string depart, string arrival, DateTime date, int alt);
        
         //Ticket LuxuryTicket();
 
-        Ticket CheapTicket(string d, string a, DateTime dat, int i);
+        //return cheap ticket to train
+        Ticket CheapTicket(string depart, string arrival, DateTime date, int alt);
 
     }
 }

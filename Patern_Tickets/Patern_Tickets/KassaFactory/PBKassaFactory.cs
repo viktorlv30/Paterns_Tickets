@@ -9,9 +9,9 @@ namespace Patern_Tickets.Factories
             return new AirTickFactory().CreateTicket(dep, arr, date, alt);
         }
 
-        public Ticket CheapTicket(string dep, string arr, DateTime date, int alt)
+        public Ticket CheapTicket(string dep, string arr, DateTime date, int cabNum)
         {
-            return new TrainTickFactory().CreateTicket(dep, arr, date, alt);
+            return new ShipTickFactory().CreateTicket(dep, arr, date, cabNum);
         }
     }
 }
