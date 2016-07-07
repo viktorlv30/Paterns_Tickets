@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,10 +12,11 @@ namespace Patern_Tickets
 
         protected int Alt { get; set; }
 
-        private ClientRequirements _require = new ClientRequirements();
-        
-        
-        
+        public ClientRequire _require;// = new ClientRequire();
+        _require.????????????????????????
+
+
+
         public AviaT()
         { }
 

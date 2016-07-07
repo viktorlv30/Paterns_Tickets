@@ -25,6 +25,9 @@ namespace Patern_Tickets
             trav.AddTicket(new UkrzaliznucyaKassaFactory().LuxuryTicket("Liverpool", "London", Convert.ToDateTime("24 August 2016 02:20:35 PM"), 17));
             trav.AddTicket(new UrozhaiKassaFactory().CheapTicket("London", "Paris", Convert.ToDateTime("22 July 2016 12:20:35 AM"), 15000));
 
+            ClientRequire request;
+            request._arrival = "Zhutimir";
+            request._departure = "Vinnitsya";
 
             Console.WriteLine(trav.ShowTravel());
             Console.ReadKey();
