@@ -11,6 +11,10 @@ namespace Patern_Tickets
 
         protected int Alt { get; set; }
 
+        private ClientRequirements _require = new ClientRequirements();
+        
+        
+        
         public AviaT()
         { }
 
