@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets
 {
-    class BusT : Ticket, ITicket
+    class BusT : Ticket
     {
 
         protected int PlaceNumber { get; set; }
@@ -20,7 +20,7 @@ namespace Patern_Tickets
             PlaceNumber = plNum;
         }
 
-        public void GetTicket()
+        public override void GetTicket()
         {
             Console.WriteLine("Get bus ticket!");
         }

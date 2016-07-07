@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets
 {
-    public class ShipT : Ticket, ITicket
+    public class ShipT : Ticket
     {
         protected int CabinNumber { get; set; }
 
@@ -19,7 +19,7 @@ namespace Patern_Tickets
             CabinNumber = cabNum;
         }
 
-        public void GetTicket()
+        public override void GetTicket()
         {
             Console.WriteLine("Get ship ticket!");
         }

@@ -38,9 +38,16 @@ namespace Patern_Tickets
 
         public string ShowTravel()
         {
+            //string travelDescription = "";
             try
             {
-                return _tickets.Aggregate("", (current, tick) => current + tick.ShowTrip());
+                //    foreach (var ticket in _tickets)
+                //    {
+                //        travelDescription += ticket.ShowTrip();
+                //    }
+                //    return travelDescription;
+
+                return _tickets.Aggregate("", (current, ticket) => current + ticket.ShowTrip());
             }
             catch 
             {

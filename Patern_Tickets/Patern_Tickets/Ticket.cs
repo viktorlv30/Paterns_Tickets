@@ -6,8 +6,13 @@
 
 namespace Patern_Tickets
 {
-    public abstract class Ticket
+    public abstract class Ticket : ITicket
     {
+        protected string Departure { get; set; }
+
+        protected string Arrival { get; set; }
+
+        protected DateTime DateAndTimeStart { get; set; }
 
         protected Ticket()
         {
@@ -21,13 +26,9 @@ namespace Patern_Tickets
             DateAndTimeStart = date;
         }
 
-        protected string Departure { get; set; }
-
-        protected string Arrival { get; set; }
-
-        protected DateTime DateAndTimeStart { get; set; }
+        public abstract void GetTicket();
 
         public abstract string ShowTrip();
-
+        
     }
 }

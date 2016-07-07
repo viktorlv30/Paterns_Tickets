@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets
 {
-    public class AviaT : Ticket, ITicket
+    public class AviaT : Ticket
     {
 
         protected int Alt { get; set; }
@@ -20,7 +20,7 @@ namespace Patern_Tickets
             Alt = alt;
         }
 
-        public void GetTicket()
+        public override void GetTicket()
         {
             Console.WriteLine("Get avia ticket"); 
         }
