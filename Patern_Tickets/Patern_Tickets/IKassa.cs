@@ -2,6 +2,7 @@
 
 namespace Patern_Tickets
 {
+    //Kassa interface for each kassa factory
     public interface IKassa
     {
         //return expensive ticket to airplane

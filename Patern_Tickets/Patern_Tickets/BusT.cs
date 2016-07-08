@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets
 {
+    //concrete class for Bus tickets
     class BusT : Ticket
     {
 

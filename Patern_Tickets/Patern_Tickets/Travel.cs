@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets
 {
+    //concrete class for create travel
     public class Travel : ITravel
     {
-
+        //list for all tickets in our travel
         private List<Ticket> _tickets;
 
         public Travel()
@@ -16,6 +17,7 @@ namespace Patern_Tickets
             _tickets = new List<Ticket>();
         }
          
+        //add trip to our travel without check yet
         public void AddTicket(Ticket ticket)
         {
             try
@@ -36,6 +38,7 @@ namespace Patern_Tickets
             _tickets.RemoveAt(index);
         }
 
+        //show all trips in our travel
         public string ShowTravel()
         {
             //string travelDescription = "";

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets.Factories
 {
+    //factory gets client request and return Train ticket (without data checkig yet)
     public class TrainTickFactory : ITicketCreator
     {
         public Ticket CreateTicket()

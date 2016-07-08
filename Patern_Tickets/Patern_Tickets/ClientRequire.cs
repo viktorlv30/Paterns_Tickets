@@ -2,6 +2,8 @@
 
 namespace Patern_Tickets
 {
+    //struct for store client request, where he want to travel
+    //this is will be parametr for constructors of each ticket factory
     public struct ClientRequire
     {
         public string _departure;
@@ -13,6 +15,7 @@ namespace Patern_Tickets
         public int _parametr;
 
         public int _dictionaryKey;
+
 
         public ClientRequire(string dep, string arr, DateTime date, int param, int key)
         {

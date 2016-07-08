@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets
 {
+    //main interface for ticket factorys
     internal interface ITicketCreator
     {
         Ticket CreateTicket();

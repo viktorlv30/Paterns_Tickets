@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets
 {
+    //describe the main methods of travel
     internal interface ITravel
     {
         void AddTicket(Ticket ticket);

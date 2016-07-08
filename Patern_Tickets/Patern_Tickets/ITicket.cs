@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets
 {
+    //ticket interfase describe main methods concrete ticket classes
     interface ITicket
     {
         void GetTicket();

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Patern_Tickets
 {
+    //concrete class for Train tickets
     public class TrainT : Ticket
     {
         protected int Wagon { get; set; }

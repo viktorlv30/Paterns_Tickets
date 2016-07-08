@@ -6,6 +6,7 @@
 
 namespace Patern_Tickets
 {
+    //abstract basic class for concrete ticket classes
     public abstract class Ticket : ITicket
     {
         protected string Departure { get; set; }

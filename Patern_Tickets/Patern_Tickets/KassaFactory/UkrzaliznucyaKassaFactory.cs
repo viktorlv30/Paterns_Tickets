@@ -2,6 +2,8 @@
 
 namespace Patern_Tickets.Factories
 {
+    ////Ukrzaliznucya kassa - gets client request and return only Train ticket
+    /// both methods return Train ticket
     public class UkrzaliznucyaKassaFactory : IKassa
     {
 
