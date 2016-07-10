@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Patern_Tickets
 {
@@ -6,6 +7,7 @@ namespace Patern_Tickets
     //this is will be parametr for constructors of each ticket factory
     public struct ClientRequire
     {
+        
         public string Departure { get; set; }
 
         public string Arrival { get; set; }
@@ -21,5 +23,19 @@ namespace Patern_Tickets
             DateTimeTrip = date;
             Parametr = param;
         }
+
+        //private List<ClientRequire> _reqList;
+
+
+        //public void AddReqList(ClientRequire req)
+        //{
+        //    _reqList.Add(req);
+        //}
+
+        //public List<ClientRequire> GetReqList()
+        //{
+        //    return _reqList;
+        //}
+
     }
 }
