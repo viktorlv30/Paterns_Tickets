@@ -16,5 +16,15 @@ namespace Patern_Tickets.Factories
         {
             return new TrainTickFactory().CreateTicket(dep, arr, date, wagNum);
         }
+
+        public Ticket LuxuryTicket(ClientRequire req)
+        {
+            return new TrainTickFactory().CreateTicket(req.Departure, req.Arrival, req.DateTimeTrip, req.Parametr);
+        }
+
+        public Ticket CheapTicket(ClientRequire req)
+        {
+            return new TrainTickFactory().CreateTicket(req.Departure, req.Arrival, req.DateTimeTrip, req.Parametr);
+        }
     }
 }

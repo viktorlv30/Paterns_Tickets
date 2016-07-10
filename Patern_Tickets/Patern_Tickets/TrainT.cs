@@ -20,6 +20,12 @@ namespace Patern_Tickets
             Wagon = wagNum;
         }
 
+        public TrainT(ClientRequire require)
+            : base(require.Departure, require.Arrival, require.DateTimeTrip)
+        {
+            Wagon = require.Parametr;
+        }
+
         public override void GetTicket()
         {
             Console.WriteLine("Get train ticket!");

@@ -13,9 +13,19 @@ namespace Patern_Tickets.Factories
             return new AirTickFactory().CreateTicket(dep, arr, date, alt);
         }
 
+        public Ticket LuxuryTicket(ClientRequire req)
+        {
+            return new AirTickFactory().CreateTicket(req.Departure, req.Arrival, req.DateTimeTrip, req.Parametr);
+        }
+
         public Ticket CheapTicket(string dep, string arr, DateTime date, int cabNum)
         {
             return new ShipTickFactory().CreateTicket(dep, arr, date, cabNum);
+        }
+
+        public Ticket CheapTicket(ClientRequire req)
+        {
+            return new ShipTickFactory().CreateTicket(req.Departure, req.Arrival, req.DateTimeTrip, req.Parametr);
         }
     }
 }

@@ -13,15 +13,6 @@ namespace Patern_Tickets
 
         protected int Alt { get; set; }
 
-
-        //I don't understand why I can use fields of my struct in this file ?????????????
-
-        public ClientRequire _require;// = new ClientRequire();
-        //_require.????????????????????????
-
-        
-
-
         public AviaT()
         { }
 
@@ -29,6 +20,12 @@ namespace Patern_Tickets
             : base(depart, arrival, date)
         {
             Alt = alt;
+        }
+
+        public AviaT(ClientRequire require)
+            : base(require.Departure, require.Arrival, require.DateTimeTrip)
+        {
+            Alt = require.Parametr;
         }
 
         public override void GetTicket()

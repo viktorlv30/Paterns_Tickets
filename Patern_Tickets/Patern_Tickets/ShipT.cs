@@ -20,6 +20,12 @@ namespace Patern_Tickets
             CabinNumber = cabNum;
         }
 
+        public ShipT(ClientRequire require)
+            : base(require.Departure, require.Arrival, require.DateTimeTrip)
+        {
+            CabinNumber = require.Parametr;
+        }
+
         public override void GetTicket()
         {
             Console.WriteLine("Get ship ticket!");

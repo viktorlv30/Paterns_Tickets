@@ -21,6 +21,12 @@ namespace Patern_Tickets
             PlaceNumber = plNum;
         }
 
+        public BusT(ClientRequire require)
+            : base(require.Departure, require.Arrival, require.DateTimeTrip)
+        {
+            PlaceNumber = require.Parametr;
+        }
+
         public override void GetTicket()
         {
             Console.WriteLine("Get bus ticket!");

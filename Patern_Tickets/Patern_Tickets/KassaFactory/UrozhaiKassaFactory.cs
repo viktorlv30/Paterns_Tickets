@@ -15,5 +15,15 @@ namespace Patern_Tickets.Factories
         {
             return new BusTickFactory().CreateTicket(dep, arr, date, plNum);
         }
+
+        public Ticket LuxuryTicket(ClientRequire req)
+        {
+            return new BusTickFactory().CreateTicket(req.Departure, req.Arrival, req.DateTimeTrip, req.Parametr);
+        }
+
+        public Ticket CheapTicket(ClientRequire req)
+        {
+            return new BusTickFactory().CreateTicket(req.Departure, req.Arrival, req.DateTimeTrip, req.Parametr);
+        }
     }
 }

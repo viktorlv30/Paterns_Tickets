@@ -6,24 +6,24 @@ namespace Patern_Tickets
     //this is will be parametr for constructors of each ticket factory
     public struct ClientRequire
     {
-        public string _departure;
+        public string Departure { get; set; }
 
-        public string _arrival;
+        public string Arrival { get; set; }
 
-        public DateTime _dateTimeTrip;
+        public DateTime DateTimeTrip { get; set; }
 
-        public int _parametr;
+        public int Parametr { get; set; }
 
-        public int _dictionaryKey;
+        public int DictionaryKey { get; set; }
 
 
         public ClientRequire(string dep, string arr, DateTime date, int param, int key)
         {
-            _departure = dep;
-            _arrival = arr;
-            _dateTimeTrip = date;
-            _parametr = param;
-            _dictionaryKey = key;
+            Departure = dep;
+            Arrival = arr;
+            DateTimeTrip = date;
+            Parametr = param;
+            DictionaryKey = key;
         }
     }
 }
