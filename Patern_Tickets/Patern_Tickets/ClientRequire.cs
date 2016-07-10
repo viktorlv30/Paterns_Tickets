@@ -14,16 +14,12 @@ namespace Patern_Tickets
 
         public int Parametr { get; set; }
 
-        public int DictionaryKey { get; set; }
-
-
-        public ClientRequire(string dep, string arr, DateTime date, int param, int key)
+        public ClientRequire(string dep, string arr, DateTime date, int param)
         {
             Departure = dep;
             Arrival = arr;
             DateTimeTrip = date;
             Parametr = param;
-            DictionaryKey = key;
         }
     }
 }

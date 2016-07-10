@@ -46,6 +46,7 @@
     <Compile Include="AviaT.cs" />
     <Compile Include="BusT.cs" />
     <Compile Include="ClientRequire.cs" />
+    <Compile Include="DictionarTicket.cs" />
     <Compile Include="KassaFactory\UrozhaiKassaFactory.cs" />
     <Compile Include="TicketFactory\AirTickFactory.cs" />
     <Compile Include="TicketFactory\BusTickFactory.cs" />

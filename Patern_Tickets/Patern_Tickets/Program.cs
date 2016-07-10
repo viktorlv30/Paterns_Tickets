@@ -13,24 +13,17 @@ namespace Patern_Tickets
         {
             Travel trav = new Travel();
 
-            /*
-            trav.AddTicket(new BusTickFactory().CreateTicket("Vinnitsya", "Zhutomir", Convert.ToDateTime("17 July 2016 10:20:35 AM"), 25));
-            trav.AddTicket(new AirTickFactory().CreateTicket("Zhutomir", "Liverpool", Convert.ToDateTime("22 July 2016 12:20:35 AM"), 15000));
-            trav.AddTicket(new TrainTickFactory().CreateTicket("Liverpool", "London", Convert.ToDateTime("24 August 2016 02:20:35 PM"), 17));
-            trav.AddTicket(new ShipTickFactory().CreateTicket("London", "Paris", Convert.ToDateTime("25 August 2016 09:14:35 PM"), 50));
-            */
-
-            ClientRequire request = new ClientRequire("Vinnitsya", "Zhutomir", Convert.ToDateTime("17 July 2016 10:20:35 AM"), 25, 1);
-        
+            //create client request
+            ClientRequire firstTrip  = new ClientRequire("Vinnitsya", "Zhutomir", Convert.ToDateTime("17 July 2016 10:20:35 AM"), 25);
+            ClientRequire secondTrip = new ClientRequire("Zhutomir", "Liverpool", Convert.ToDateTime("25 August 2016 09:14:35 PM"), 50);
+            ClientRequire thirdTrip  = new ClientRequire("Liverpool", "London", Convert.ToDateTime("24 August 2016 02:20:35 PM"), 17);
+            ClientRequire fourTrip   = new ClientRequire("London", "Paris", Convert.ToDateTime("22 July 2016 12:20:35 AM"), 15000);
 
             //create our travel from four different trips
-            trav.AddTicket(new PbKassaFactory().LuxuryTicket(request));
-            trav.AddTicket(new PbKassaFactory().CheapTicket("Zhutomir", "Liverpool", Convert.ToDateTime("25 August 2016 09:14:35 PM"), 50));
-            trav.AddTicket(new UkrzaliznucyaKassaFactory().LuxuryTicket("Liverpool", "London", Convert.ToDateTime("24 August 2016 02:20:35 PM"), 17));
-            trav.AddTicket(new UrozhaiKassaFactory().CheapTicket("London", "Paris", Convert.ToDateTime("22 July 2016 12:20:35 AM"), 15000));
-
-            //the struct ClientRequire works in Program.cs Main() function but doesn't work in AviaT class
-            //---------------?????????
+            trav.AddTicket(new PbKassaFactory().LuxuryTicket(firstTrip));
+            trav.AddTicket(new PbKassaFactory().CheapTicket(secondTrip));
+            trav.AddTicket(new UkrzaliznucyaKassaFactory().LuxuryTicket(thirdTrip));
+            trav.AddTicket(new UrozhaiKassaFactory().CheapTicket(fourTrip));
            
 
             Console.WriteLine(trav.ShowTravel());
