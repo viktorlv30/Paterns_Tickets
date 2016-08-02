@@ -10,7 +10,9 @@ namespace Patern_Tickets
         
         public string Departure { get; set; }
 
+
         //I do not know what I want - but I learn merge conflicts
+
 
         public string Arrival { get; set; }
 
