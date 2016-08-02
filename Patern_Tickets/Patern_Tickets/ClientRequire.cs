@@ -10,6 +10,8 @@ namespace Patern_Tickets
         
         public string Departure { get; set; }
 
+        //commentr not needed
+
         public string Arrival { get; set; }
 
         public DateTime DateTimeTrip { get; set; }
