@@ -13,6 +13,7 @@ namespace Patern_Tickets
         {
             Travel trav = new Travel();
 
+
             //create client requests
             ClientRequire firstTrip  = new ClientRequire("Vinnitsya", "Zhutomir", Convert.ToDateTime("17 July 2016 10:20:35 AM"), 25);
             ClientRequire secondTrip = new ClientRequire("Zhutomir", "Liverpool", Convert.ToDateTime("25 August 2016 09:14:35 PM"), 50);
